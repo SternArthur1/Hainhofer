@@ -1,0 +1,20 @@
+import pandas as pd
+
+file_path = '/Users/annagisiger/Desktop/hainhofer_daten.csv'
+
+# Lade die Tabelle
+df = pd.read_csv(file_path)
+
+# Filtere nur die Orte
+orte_df = df[df["type"] == "place"]
+
+# Gruppiere und zähle die Orte
+ort_haeufigkeit = orte_df["text"].value_counts().reset_index()
+ort_haeufigkeit.columns = ["Ort", "Anzahl"]
+
+# Zeige die Top 10 Orte
+print("Top-Orte in den Reiseberichten:")
+print(ort_haeufigkeit.head(10))
+# Speichere nur die Top 10 als neue CSV-Tabelle
+ort_haeufigkeit.head(10).to_csv('/Users/annagisiger/Desktop/top10_orte.csv', index=False)
+print("✅ Die Datei 'top10_orte.csv' wurde auf deinem Desktop gespeichert.")
