@@ -1,0 +1,32 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Hainhofer
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Abdallah
+    family-names: Hamed
+  - given-names: Anna
+    family-names: Nevina Gisiger
+  - given-names: Arthur
+    family-names: Stern
+  - given-names: Gabor
+    family-names: Kaibjanov
+repository-code: 'https://github.com/SternArthur1/Hainhofer'
+abstract: >-
+  Ziel unserer Arbeit ist es, die Reiseberichte Philipp
+  Hainhofers (1578-1647) mit Normdaten zu verknüpfen, sie
+  mit Registerdaten anzureichern und zu visualisieren. Dies
+  beinhaltet die Named Entity Recognition (NER) in
+  XML-Dateien, das Parsen eines Registers im Format XHTML
+  sowie die Visualisierung von Geodaten in Jupyter Notebook
+  mit Python. Auf dem Repository befinden sich die
+  schriftliche Dokumentation der Projektarbeit sowie die
+  Python-Skripte.
+license: ECL-2.0
+version: '1.0'
+date-released: '2025-07-31'
